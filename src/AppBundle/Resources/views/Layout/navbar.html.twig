@@ -12,7 +12,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>
+                <li>  {{ render(controller('AppBundle:Layout:navbar', {request: app.request})) }}
                     <!-- Lien vers la page sciences -->
                     <a href="#">
                         Sciences
